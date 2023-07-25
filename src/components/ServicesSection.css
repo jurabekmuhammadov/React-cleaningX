@@ -1,0 +1,225 @@
+#services {
+  /* padding-bottom: 150px; */
+  padding: 0 20px 150px;
+}
+.services-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+}
+.services-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services-heading h1 {
+  color: #211f54;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.984px;
+}
+.services-heading a {
+  padding: 26px 39px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 10px 0px rgba(20, 20, 43, 0.176);
+  color: #211f54;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.998px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.services-heading a:hover {
+  background: #0075ff;
+  color: white;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.services-cards .card {
+  height: 495px;
+  padding: 49px 38px 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #eff0f6;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(20, 20, 43, 0.176);
+  text-align: center;
+  cursor: pointer;
+}
+.services-cards .card img {
+  transition: 0.5s;
+  width: 200px;
+  height: auto;
+}
+.services-cards .card h3 {
+  margin-top: 24px;
+  color: #211f54;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34.008px;
+}
+
+.services-cards .card p {
+  margin-top: 13px;
+  color: #6e7191;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px;
+}
+
+.services-cards .card:hover img {
+  transform: scale(1.1);
+}
+
+.banner {
+  padding-right: 140px;
+  margin: 140px auto 0;
+  width: 100%;
+  height: 676px;
+  border-radius: 24px;
+  background: #211f54;
+  background-image: url(../assets/images/banner.svg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner .content span {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.banner .content h1 {
+  max-width: 491px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.984px;
+}
+
+.banner .content p {
+  max-width: 474px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px;
+}
+
+@media (max-width: 1190px) {
+  .banner {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 660px) {
+  .banner {
+    height: 450px;
+  }
+  .banner .content h1 {
+    font-size: 35px;
+    line-height: 120%;
+  }
+  .banner .content span {
+   font-size: 14px;
+  }
+  .banner .content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 978px) {
+  .services-heading a {
+    padding: 20px;
+  }
+  .services-cards .card {
+    height: auto;
+    padding: 30px 20px;
+  }
+  .services-cards .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .services-cards .card p {
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 870px) {
+  .services-cards .card p {
+    font-size: 16px;
+  }
+  .services-cards .card h3 {
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .services-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-cards .card:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (max-width: 550px) {
+  .services-heading h1 {
+    font-size: 35px;
+  }
+  .services-heading a {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .services-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-cards .card img {
+    width: 150px;
+    height: auto;
+  }
+  .services-cards .card {
+    width: 80%;
+  }
+}
