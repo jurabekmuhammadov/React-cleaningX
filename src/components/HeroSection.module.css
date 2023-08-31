@@ -173,9 +173,9 @@
     line-height: 110%;
   }
 }
-@media(max-width: 425px) {
+@media(max-width: 430px) {
   #hero {
-    margin-top: 30px;
+    margin-top: 120px;
   }
   .heroContent {
     gap: 18px;
